@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/titleHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pemesanan"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/titleHome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiket Kereta"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleHome"
+        />
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width=""-->
+<!--            android:layout_height="" />-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <EditText
+        android:id="@+id/input_nama"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleHome2"
+        android:layout_marginTop="60dp"
+        android:hint="Nama Pesanan"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:backgroundTint="@color/grey"
+        android:textColor="@color/black"
+        android:background="@drawable/roundedcorner"
+        />
+    <EditText
+        android:id="@+id/input_jam"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:focusable="false"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_nama"
+        android:layout_marginTop="20dp"
+        android:hint="Jam Keberangkatan"
+        android:drawableLeft="@drawable/baseline_access_time_24"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:backgroundTint="@color/grey"
+        android:background="@drawable/roundedcorner"
+        />
+    <EditText
+        android:id="@+id/input_tanggal"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:focusable="false"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_jam"
+        android:layout_marginTop="20dp"
+        android:hint="Pilih Tanggal Keberangkatan"
+        android:drawableLeft="@drawable/baseline_calendar_month_24"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:backgroundTint="@color/grey"
+        android:background="@drawable/roundedcorner"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_location"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundedcorner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_tanggal"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="20dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPesanTiket"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_location"
+        android:layout_marginTop="80dp"
+        app:cornerRadius="10dp"
+        android:text="Pesan Tiket"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".SecondActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/titleSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berhasil Mendapatkan"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/titleSuccess2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiket !"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleSuccess"
+        />
+    <ImageView
+        android:id="@+id/img_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleSuccess2"
+        android:layout_marginTop="50dp"/>
+    
+    <TextView
+        android:id="@+id/label_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_success"
+        android:text="Nama          :"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/font"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp" />
+    <TextView
+        android:id="@+id/label_jam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_nama"
+        android:text="Jam             :"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/font"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp" />
+    <TextView
+        android:id="@+id/label_tgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_jam"
+        android:text="Tanggal      :"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/font"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp" />
+    <TextView
+        android:id="@+id/label_tujuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_tgl"
+        android:text="Tujuan        :"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/font"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp" />
+
+    <!--    hasil input  -->
+    <TextView
+        android:id="@+id/txt_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/label_nama"
+        app:layout_constraintTop_toTopOf="@id/label_nama"
+        app:layout_constraintBottom_toBottomOf="@id/label_nama"
+        android:text="Nama"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/font"
+        android:layout_marginStart="25dp" />
+
+    <TextView
+        android:id="@+id/txt_jam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/label_jam"
+        app:layout_constraintTop_toTopOf="@id/label_jam"
+        app:layout_constraintBottom_toBottomOf="@id/label_jam"
+        android:text="Jam"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/font"
+        android:layout_marginStart="25dp" />
+    <TextView
+        android:id="@+id/txt_tgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/label_tgl"
+        app:layout_constraintTop_toTopOf="@id/label_tgl"
+        app:layout_constraintBottom_toBottomOf="@id/label_tgl"
+        android:text="Tanggal"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/font"
+        android:layout_marginStart="25dp" />
+    <TextView
+        android:id="@+id/txt_tujuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/label_tujuan"
+        app:layout_constraintTop_toTopOf="@id/label_tujuan"
+        app:layout_constraintBottom_toBottomOf="@id/label_tujuan"
+        android:text="Tujuan"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/font"
+        android:layout_marginStart="25dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

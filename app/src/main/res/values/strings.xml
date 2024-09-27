@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">pertemuan6_tugas</string>
+    <string name="nama_hint"><font size="15sp">Nama Pesenan</font></string>
+    <array name="locations">
+        <item>Location</item>
+        <item>Aceh</item>
+        <item>Bali</item>
+        <item>Jakarta</item>
+        <item>Jawa Barat</item>
+        <item>Jawa Tengah</item>
+        <item>Jawa Timur</item>
+    </array>
+</resources>
